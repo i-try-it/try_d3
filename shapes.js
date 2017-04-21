@@ -11,7 +11,7 @@ svg.selectAll('rect') //find ? return it : return empty selections
         return d*15;
     })
     .attr('width', '50')
-    .attr('x', function(d, i) {//5, 1
+    .attr('x', function(d, i) {//5, 0
         return 60*i; 
     })
     .attr('y', function(d, i){
