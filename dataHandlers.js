@@ -32,5 +32,9 @@ d3.text('data.txt')
                 price: Number(rows[p].price.trim().slice(1))
             })
         }
-        console.log(newRows);
+        // console.log(newRows);
     });
+
+d3.json('treeData.json').get(function(error, data) {
+    console.log(data[0]);
+})
