@@ -5,6 +5,11 @@ html, body {
 line {
     stroke: red;
 }
+path {
+    stroke: green;
+    fill: none;
+    stroke-width: 2;
+}
 g.group0 path,
 g.group0 circle {
     stroke: red;
