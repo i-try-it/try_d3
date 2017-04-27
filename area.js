@@ -4,13 +4,18 @@ var dataYears = ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007',
 var height = 200;
 var width = 500;
 
+var y = d3.scaleLinear()
+            .domain([0, 100]) // min and max for the real data
+            .range([height, 0]);
+
+
 var area = d3.area()
                 .x(function(d, i) {
                     return i* 20;
                 })
                 .y0(height)
                 .y1(function(d){
-                    return height - d;
+                    return y(d);
                 });
 var svg = d3.select('body').append('svg').attr('height', '100%').attr('width', '100%');
 svg.append('path').attr('d', area(dataArray));
