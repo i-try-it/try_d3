@@ -1,8 +1,8 @@
 var dataArray = [5, 11, 18];
 var dataDays = ['Mon', 'Wed', 'Fri'];
-var x = d3.scaleOrdinal()
+var x = d3.scalePoint()
     .domain(dataDays)
-    .range([25, 85, 145]);
+    .range([0, 170]);
 var xAxis = d3.axisBottom(x);
 
 var svg = d3.select('body').append('svg')
