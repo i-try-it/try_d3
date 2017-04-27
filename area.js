@@ -15,7 +15,11 @@ var y = d3.scaleLinear()
             .domain([0, 100]) // min and max for the real data
             .range([height, 0]);
 
-var yAxis = d3.axisLeft(y);//labels come to the left
+var yAxis = d3
+    .axisLeft(y)// labels come to the left
+    .ticks(3)
+    .tickPadding(10)
+    .tickSize(10);//live only 3 labels(differs from version to version of d3)
 
 var area = d3.area()
                 .x(function(d, i) {
