@@ -1,0 +1,154 @@
+[{
+    "category": "time & numeric",
+    "charts": [
+        {
+            "type": "area",
+            "isDiscrete": false,
+            "kind": "volume"
+        },
+        {
+            "type": "bar",
+            "isDiscrete": true,
+            "kind": "volume"
+        },
+        {
+            "type": "line",
+            "isDiscrete": false,
+            "kind": "level"
+        },
+        {
+            "type": "dot",
+            "isDiscrete": true,
+            "kind": "level"
+        },
+        {
+            "type": "candlestick",
+            "isDiscrete": true,
+            "kind": "level"
+        },
+         {
+            "type": "rebased line",
+            "isDiscrete": false,
+            "kind": "period comparison"
+        },
+        {
+            "type": "radar",
+            "isDiscrete": false,
+            "kind": "cyclical"
+        },
+        {
+            "type": "circular heat",
+            "isDiscrete": false,
+            "kind": "cyclical"
+        }
+    ]
+},
+{
+    "category": "text",
+    "charts": [
+        {
+            "type": "work cloud",
+            "isDiscrete": true,
+            "kind": "frequency"
+        },
+        {
+            "type": "matrix",
+            "isDiscrete": true,
+            "kind": "co-occurrence"
+        },
+        {
+            "type": "chord diagram",
+            "isDiscrete": false,
+            "kind": "relationship"
+        }
+    ]
+},
+{
+    "category": "hierarchy",
+    "charts": [
+        {
+            "type": "partition",
+            "hasSizeData": true,
+            "kind": "hierarchy"
+        },
+        {
+            "type": "sunburst",
+            "hasSizeData": true,
+            "kind": "hierarchy"
+        },
+        {
+            "type": "radial tree",
+            "hasSizeData": false,
+            "kind": "radial tree"
+        },
+        {
+            "type": "tree / dendro",
+            "hasSizeData": false,
+            "kind": "flow / process"
+        },
+        {
+            "type": "treemap",
+            "hasSizeData": true,
+            "kind": "treemap"
+        },
+        {
+            "type": "pack",
+            "hasSizeData": true,
+            "kind": "pack"
+        }
+    ]
+},
+{
+    "category": "geography",
+    "charts": [
+        {
+            "type": "choropleth",
+            "kind": "regional"
+        },
+        {
+            "type": "spot map",
+            "kind": "localion"
+        },
+        {
+            "type": "tube map",
+            "hasSizeData": false,
+            "kind": "sequence"
+        }
+    ]
+},
+{
+    "category": "distribution",
+    "charts": [
+        {
+            "type": "histogram",
+            "kind": "frequency"
+        },
+        {
+            "type": "boxplot",
+            "kind": "compare"
+        },
+        {
+            "type": "scatterplot",
+            "hasSizeData": false,
+            "kind": "results"
+        }
+    ]
+},
+{
+    "category": "other",
+    "charts": [
+        {
+            "type": "relationship",
+            "kind": "relationship"
+        },
+        {
+            "type": "force-directed",
+            "kind": "simulation"
+        },
+        {
+            "type": "network",
+            "hasSizeData": false,
+            "kind": "flow"
+        }
+    ]
+}]
