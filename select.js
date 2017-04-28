@@ -55,7 +55,8 @@ secondGroups.append("rect")
 secondGroups.selectAll("circle")
 	.data(function(d){ return d; })
 	.enter().append("circle")
-		.attr("cx",function(d,i){ console.log(d);return ((i*21)+10); })
+        .filter(function(d) { return d>10; })
+		.attr("cx",function(d,i){ return ((i*21)+10); })
 		.attr("cy","25")
 		.attr("r","10")
 
@@ -69,4 +70,4 @@ secondGroups.selectAll("text")
 	.attr("class","txt")
 	.attr("text-anchor","middle")
 	.attr("dominant-baseline","middle")
-	.text(function(d,i,nodes){console.log(nodes);return d;});
+	.text(function(d,i,nodes){return d;});
