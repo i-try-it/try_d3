@@ -64,6 +64,12 @@ d3.text('test.txt').get(function(error, data) {
         myNewLinePositions.push(b);
         return a;
     })
-    console.log(myTabPositions);
-    console.log(myNewLinePositions);
+    // console.log(myTabPositions);
+    // console.log(myNewLinePositions);
 });
+
+d3.html('https://enable-cors.org/').get(function(error, data) {
+    //we can read only from sites were cors are enabled
+    var frag = data.querySelector('div')
+    console.log(frag);
+})
