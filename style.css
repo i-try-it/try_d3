@@ -27,3 +27,15 @@ g.hidden line,
 g.hidden path {
     display: none;
 }
+rect {
+    fill: lightblue;
+    stroke: cornflowerblue;
+}
+circle {
+    fill: indianred;
+}
+text {
+    font-family: arial;
+    fill: white;
+    font-size: 11px;
+}
