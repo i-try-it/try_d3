@@ -8,8 +8,13 @@ d3.csv('prices.csv')
         };
     })
     .get(function (error, data) {
-        //console.log(data);
+        
+        var nestedData = d3.nest() //agregate by time periods
+            .key(function(d) { return d.month.getFullYear(); })//getMonth()
+            .entries(data);
+        console.log(nestedData);
     });
+
 
 d3.tsv('data.tsv')
     .row(function (d) {
@@ -71,5 +76,5 @@ d3.text('test.txt').get(function(error, data) {
 d3.html('https://enable-cors.org/').get(function(error, data) {
     //we can read only from sites were cors are enabled
     var frag = data.querySelector('div')
-    console.log(frag);
+    //console.log(frag);
 })
