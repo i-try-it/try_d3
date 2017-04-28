@@ -45,7 +45,7 @@ d3.xml('data.xml').get(function(error, data) {
     //console.log(letterNodes);
 })
 
-d3.text('test.txt'.get(function(error, data){
+d3.text('test.txt').get(function(error, data) {
     var myTabPositions = [];
     var myNewLinePositions = [];
 
@@ -66,4 +66,4 @@ d3.text('test.txt'.get(function(error, data){
     })
     console.log(myTabPositions);
     console.log(myNewLinePositions);
-}))
+});
