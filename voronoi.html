@@ -17,8 +17,16 @@
     </head>
     <body>
         <script type="text/javascript">
-            var width = 950;
-            var height = 500;
+        d3.select(window).on('resize', chartFunction);
+
+        function chartFunction () {
+            var svgtest = d3.select('body').select('svg');
+            if(!svgtest.empty()){
+                svgtest.remove();
+            }
+
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var height = window.innerHeight;
             var vertices = d3.range(100).map(function(d) {
                 return [Math.random() * width, Math.random() * height];
             });
@@ -31,7 +39,6 @@
                 .data(voronoi.polygons(vertices))
                 .enter().append('path')
                     .attr('d', function(d) {
-                        console.log(d)
                         return 'M' + d.join('L') + 'Z';
                     })
             svg.append('g').attr('class', 'fuel')
@@ -42,7 +49,7 @@
                     .attr('cy', function(d) { return d[1] })
                     .attr('r', '2.5')
 
-            
+        } 
         
         </script>
     </body>
